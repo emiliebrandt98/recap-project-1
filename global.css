@@ -20,3 +20,12 @@ body {
   background-color: var(--background-color);
   text-align: center;
 }
+
+.main-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
