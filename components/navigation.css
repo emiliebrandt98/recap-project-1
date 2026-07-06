@@ -18,8 +18,13 @@
 .footer-navbar__btn-profil {
   background-color: var(--beige);
   border: none;
-  width: 100%;
-  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+  height: 100%;
   padding: 0;
 }
 
