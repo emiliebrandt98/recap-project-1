@@ -28,7 +28,7 @@
   padding: 0;
 }
 
-.footer-navbar__btn-home {
+.footer-navbar .active {
   background-color: var(--primary);
 }
 
