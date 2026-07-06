@@ -2,10 +2,10 @@
   background-color: var(--primary);
   border: none;
   padding: 12px 24px;
-  font-size: 0; /* blendet den (leeren) HTML-Text aus */
+  font-size: 0;
   border-radius: 12px;
   font-weight: 600;
-  list-style: none; /* entfernt Dreieck in Firefox */
+  list-style: none;
   cursor: pointer;
 }
 
@@ -15,12 +15,12 @@
 }
 
 .quiz-card--button::-webkit-details-marker {
-  display: none; /* entfernt Dreieck in Chrome/Safari */
+  display: none;
 }
 
 .quiz-card--button::after {
   content: "Show Answer";
-  font-size: 1.2rem; /* die eigentliche Schriftgröße kommt hierher */
+  font-size: 1.2rem;
 }
 
 details[open] .quiz-card--button::after {
