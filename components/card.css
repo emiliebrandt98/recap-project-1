@@ -27,6 +27,7 @@
   width: 100%;
 }
 
+/* bookmark */
 .quiz-card--bookmark {
   position: absolute;
   top: -20px;
@@ -38,36 +39,6 @@
   background-color: var(--beige);
   border-radius: 28px;
   padding: 8px;
-}
-
-/* text */
-.quiz-card--button {
-  background-color: var(--primary);
-  border: none;
-  padding: 12px 24px;
-  font-size: 0; /* blendet den (leeren) HTML-Text aus */
-  border-radius: 12px;
-  font-weight: 600;
-  list-style: none; /* entfernt Dreieck in Firefox */
-  cursor: pointer;
-}
-
-.quiz-card--answer {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.quiz-card--button::-webkit-details-marker {
-  display: none; /* entfernt Dreieck in Chrome/Safari */
-}
-
-.quiz-card--button::after {
-  content: "Show Answer";
-  font-size: 1.2rem; /* die eigentliche Schriftgröße kommt hierher */
-}
-
-details[open] .quiz-card--button::after {
-  content: "Hide Answer";
 }
 
 /* Tags */
