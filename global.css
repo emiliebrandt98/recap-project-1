@@ -4,17 +4,22 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
 :root {
   --primary: #ff6f20;
   --secondary: #a18ebd;
   --tertiary: #4f9b4a;
   --beige: #d6cda4;
   --background-color: #fbfcfb;
+  --background-tag: #a18ebd3f;
   --text-color: #2b3a67;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h2 {
+  text-align: center;
 }
