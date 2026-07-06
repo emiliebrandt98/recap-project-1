@@ -29,3 +29,7 @@ body {
   flex-direction: column;
   gap: 32px;
 }
+
+h3 {
+  margin-bottom: 0;
+}
