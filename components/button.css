@@ -10,15 +10,6 @@
   cursor: pointer;
 }
 
-.quiz-card--answer {
-  font-weight: var(--font-weight);
-  font-size: 1.2rem;
-}
-
-.quiz-card--button::-webkit-details-marker {
-  display: none;
-}
-
 .hide-label {
   display: none;
 }
