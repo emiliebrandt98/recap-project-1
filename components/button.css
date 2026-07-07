@@ -2,10 +2,12 @@
   background-color: var(--primary);
   border: none;
   padding: 12px 24px;
-  font-size: 0;
   border-radius: 12px;
-  font-weight: 600;
   list-style: none;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
   cursor: pointer;
 }
 
@@ -18,11 +20,14 @@
   display: none;
 }
 
-.quiz-card--button::after {
-  content: "Show Answer";
-  font-size: 1.2rem;
+.hide-label {
+  display: none;
 }
 
-details[open] .quiz-card--button::after {
-  content: "Hide Answer";
+details[open] .show-label {
+  display: none;
+}
+
+details[open] .hide-label {
+  display: inline;
 }

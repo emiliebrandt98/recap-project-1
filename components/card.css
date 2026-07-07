@@ -44,7 +44,7 @@
   /* align-self: start; */
 }
 
-.quiz-card––tags {
+.quiz-card–tags {
   border: 2px solid var(--secondary);
   background-color: var(--background-tag);
   padding: 6px 19px;
