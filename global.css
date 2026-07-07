@@ -5,20 +5,39 @@
 }
 
 :root {
-  --primary: #ff6f20;
-  --secondary: #a18ebd;
-  --tertiary: #4f9b4a;
-  --beige: #d6cda4;
+  /* colors */
+  --primary: #f20732;
+  --secondary: #64588c;
+  --background-secondary: #64588c46;
   --background-color: #fbfcfb;
-  --background-tag: #a18ebd3f;
-  --text-color: #2b3a67;
+  --text-color-dark: #3f080d;
+  --text-color-light: #fbfcfb;
+
+  /* border-radius */
+  --radius-xl: 999px;
+  --radius-l: 32px;
+  --radius-m: 24px;
+  --radius-s: 12px;
+
+  /* padding */
+  --padding-xl: 32px;
+  --padding-l: 24px;
+  --padding-m: 20px;
+  --padding-s: 8px;
+
+  /*  font */
+  --font-weight: 600;
+
+  /*  gap */
+  --gap: 40px;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--text-color);
+  color: var(--text-color-dark);
   background-color: var(--background-color);
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .main-content {
@@ -27,7 +46,7 @@ body {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--gap);
 }
 
 h3 {

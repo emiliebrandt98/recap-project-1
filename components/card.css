@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
 
-  border-radius: 24px;
+  border-radius: var(--radius-m);
   border: 2px solid var(--secondary);
-  background-color: var(--background-tag);
+  background-color: var(--background-secondary);
 }
 
 .quiz-card {
@@ -14,13 +14,13 @@
   flex-direction: column;
   position: relative;
 
-  gap: 20px;
-  padding: 32px;
+  gap: var(--gap);
+  padding: var(--padding-xl);
   width: 100%;
 }
 
 /* bookmark */
-.quiz-card--bookmark {
+.quiz-card--bookmark-btn {
   position: absolute;
   top: -20px;
   right: 18px;
@@ -28,25 +28,33 @@
   width: 64px;
   height: auto;
 
-  background-color: var(--beige);
-  border-radius: 28px;
-  padding: 8px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--radius-xl);
+  padding: var(--padding-s);
+  cursor: pointer;
+}
+
+.quiz-card--bookmark {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Tags */
 .quiz-card--list {
   list-style: none;
   display: flex;
-  gap: 20px;
-  font-size: 0.6rem;
-  font-weight: 600;
+  gap: var(--gap);
+  font-size: 1rem;
+  font-weight: var(--font-weight);
   padding: 0;
   /* align-self: start; */
 }
 
-.quiz-card––tags {
+.quiz-card–tags {
   border: 2px solid var(--secondary);
-  background-color: var(--background-tag);
-  padding: 6px 19px;
-  border-radius: 12px;
+  background-color: var(--background-secondary);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: var(--radius-s);
 }
