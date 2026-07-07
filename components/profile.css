@@ -5,13 +5,13 @@
 }
 
 .id__img {
-  background-color: var(--beige);
-  border-radius: 999px;
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-xl);
 }
 
 .id__img-icon {
   width: 160px;
-  padding: 24px;
+  padding: var(--padding-l);
 }
 
 .about {
@@ -30,10 +30,10 @@
   justify-content: space-evenly;
   align-items: center;
 
-  background-color: var(--secondary);
+  background-color: var(--background-secondary);
   border: none;
   width: 96px;
-  border-radius: 32px;
+  border-radius: var(--radius-l);
 
   font-size: 1rem;
 }
@@ -52,21 +52,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .settings__toogle-button {
   display: flex;
   align-items: center;
-  background-color: var(--beige);
-  width: 80px;
+
+  width: 70px;
   height: 40px;
-  border-radius: 30px;
-  padding: 5px;
+
+  padding: var(--padding-s);
   transition: all 300ms ease-in-out;
+
+  background-color: var(--background-secondary);
+  border: none;
+  border-radius: var(--radius-l);
 }
 
 .settings__toogle-button--circle {
-  background-color: white;
+  background-color: var(--background-color);
   width: 30px;
   height: 30px;
   border-radius: 50%;

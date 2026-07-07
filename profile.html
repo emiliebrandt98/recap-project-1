@@ -18,7 +18,11 @@
     <main class="main-content">
       <section class="id">
         <div class="id__img">
-          <img class="id__img-icon" src="./assets/user.png" alt="User Profil" />
+          <img
+            class="id__img-icon"
+            src="./assets/user.png"
+            alt="User Profilimage"
+          />
         </div>
         <h2>Max Doe</h2>
       </section>
@@ -34,21 +38,21 @@
       </section>
 
       <section class="counter">
-        <button class="counter__btn">
+        <button class="counter__btn" aria-label="12 Questions and Answers">
           <img
             class="counter__btn-img"
             src="./assets/question-and-answer.png"
-            alt="Questions and Answers Counter"
+            alt=""
           />
-          <p>12</p>
+          <p aria-hidden="true">12</p>
         </button>
-        <button class="counter__btn">
+        <button class="counter__btn" aria-label="4 Bookmark">
           <img
             class="counter__btn-img"
             src="./assets/bookmark-active.png"
-            alt="Bookmark Counter"
+            alt=""
           />
-          <p>4</p>
+          <p aria-hidden="true">4</p>
         </button>
       </section>
 
@@ -56,39 +60,41 @@
         <h3>Settings</h3>
         <article class="settings__darkmode">
           <p>Dark Mode</p>
-          <div class="settings__toogle-button">
+          <button class="settings__toogle-button" aria-pressed="true/false">
             <div class="settings__toogle-button--circle"></div>
-          </div>
+          </button>
         </article>
       </section>
     </main>
 
-    <footer class="footer-navbar">
-      <a href="./index.html" class="footer-navbar__btn-home">
-        <img
-          class="footer-navbar__btn--icon"
-          src="./assets/home.png"
-          alt="Home Page"
-        />
-      </a>
-      <a href="./bookmarks.html" class="footer-navbar__btn-bookmark">
-        <img
-          class="footer-navbar__btn--icon"
-          src="./assets/bookmark.png"
-          alt="Bookmark Page"
-        />
-      </a>
-      <a
-        href="./profile.html"
-        class="footer-navbar__btn-profil active"
-        aria-current="page"
-      >
-        <img
-          class="footer-navbar__btn--icon"
-          src="./assets/user-active.png"
-          alt="Profil Page"
-        />
-      </a>
+    <footer>
+      <nav class="footer-navbar" aria-label="main-navigation">
+        <a href="./index.html" class="footer-navbar__btn-home">
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/home.png"
+            alt="Home Page"
+          />
+        </a>
+        <a href="./bookmarks.html" class="footer-navbar__btn-bookmark">
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/bookmark.png"
+            alt="Bookmark Page"
+          />
+        </a>
+        <a
+          href="./profile.html"
+          class="footer-navbar__btn-profil active"
+          aria-current="page"
+        >
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/user-active.png"
+            alt="Profil Page"
+          />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
