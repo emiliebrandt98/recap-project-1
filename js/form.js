@@ -47,27 +47,27 @@ form.addEventListener("submit", (event) => {
   bookmarkImage.setAttribute("src", "./assets/bookmark.png");
   bookmarkImage.setAttribute("alt", "");
 
+  // ------------------Remaining Characters------------------
+  const remainingCharactersQuestion = document.querySelector(
+    '[data-js="characters-questions"]',
+  );
+  const questionInput = document.querySelector('[data-js="input-question"]');
+  const remainingCharactersAnswers = document.querySelector(
+    '[data-js="characters-answers"]',
+  );
+  const answerInput = document.querySelector('[data-js="input-answer"]');
+
+  function characterCounter(input, counter) {
+    input.addEventListener("input", (event) => {
+      counter.textContent = maxLength - event.target.value.length;
+    });
+  }
+
+  const maxLength = questionInput.maxLength;
+
+  characterCounter(questionInput, remainingCharactersQuestion);
+  characterCounter(answerInput, remainingCharactersAnswers);
+
   event.target.reset();
   event.target.elements.inputQuestion.focus();
 });
-
-// ------------------Remaining Characters------------------
-const remainingCharactersQuestion = document.querySelector(
-  '[data-js="characters-questions"]',
-);
-const questionInput = document.querySelector('[data-js="input-question"]');
-const remainingCharactersAnswers = document.querySelector(
-  '[data-js="characters-answers"]',
-);
-const answerInput = document.querySelector('[data-js="input-answer"]');
-
-function characterCounter(input, counter) {
-  input.addEventListener("input", (event) => {
-    counter.textContent = maxLength - event.target.value.length;
-  });
-}
-
-const maxLength = questionInput.maxLength;
-
-characterCounter(questionInput, remainingCharactersQuestion);
-characterCounter(answerInput, remainingCharactersAnswers);
