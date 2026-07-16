@@ -16,39 +16,51 @@
       <h1>Friends Quiz</h1>
     </header>
     <main class="main-content">
-      <fieldset>
-        <form data-js="form" class="form">
-          <label for="input-question">Your Question: </label>
+      <form data-js="form" class="form">
+        <fieldset>
+          <label class="form-label" for="input-question">Your Question: </label>
           <textarea
             name="inputQuestion"
             id="input-question"
             data-js="input-question"
             maxlength="150"
-            rows="5"
+            rows="6"
             placeholder="The quiz-question is…"
+            required
           ></textarea>
           <p class="remaining-characters">
             <span data-js="characters-questions">150</span> characters left
           </p>
+        </fieldset>
 
-          <label for="input-answer">Your Answer:</label>
+        <fieldset>
+          <label class="form-label" for="input-answer">Your Answer:</label>
           <textarea
             name="inputAnswer"
             id="input-answer"
             data-js="input-answer"
             maxlength="150"
+            rows="4"
             placeholder="The Answer to the question is…"
+            required
           ></textarea>
           <p class="remaining-characters">
             <span data-js="characters-answers">150</span> characters left
           </p>
+        </fieldset>
 
-          <label for="input-tag"> Tag:</label>
-          <input type="text" id="input-tag" name="inputTag" />
-
-          <button type="submit" class="quiz-card--button">Submit</button>
-        </form>
-      </fieldset>
+        <fieldset>
+          <label class="form-label" for="input-tag"> Tag:</label>
+          <input
+            type="text"
+            id="input-tag"
+            name="inputTag"
+            placeholder="z.B.: friends"
+            required
+          />
+        </fieldset>
+        <button type="submit" class="quiz-card--button">Submit</button>
+      </form>
 
       <section data-js="question-container"></section>
     </main>

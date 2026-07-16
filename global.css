@@ -30,6 +30,8 @@
 
   /*  gap */
   --gap: 40px;
+  --gap-m: 24px;
+  --gap-s: 16px;
 }
 
 body {

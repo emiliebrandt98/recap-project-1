@@ -70,7 +70,15 @@
   border-radius: var(--radius-l);
 }
 
-.settings__toogle-button--circle {
+.settings__toogle-button-circle {
+  background-color: var(--background-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.settings__toogle-button-circle--active {
   background-color: var(--background-color);
   width: 30px;
   height: 30px;

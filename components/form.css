@@ -1,1 +1,50 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  gap: var(--gap-m);
 
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-m);
+  border: 2px solid var(--secondary);
+  text-align: left;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+  border: none;
+}
+
+.remaining-characters {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
+}
+
+input,
+textarea {
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6rem;
+}
+
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.form-label {
+  font-weight: var(--font-weight);
+}

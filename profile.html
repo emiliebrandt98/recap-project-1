@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/dark-mode.js"></script>
     <title>Friends Quiz</title>
   </head>
 
@@ -60,8 +61,14 @@
         <h3>Settings</h3>
         <article class="settings__darkmode">
           <p>Dark Mode</p>
-          <button class="settings__toogle-button" aria-pressed="true/false">
-            <div class="settings__toogle-button--circle"></div>
+          <button
+            class="settings__toogle-button"
+            aria-pressed="true/false"
+            data-js="dark-mode-toggle"
+          >
+            <div
+              class="settings__toogle-button-circle settings__toogle-button-circle--active"
+            ></div>
           </button>
         </article>
       </section>
