@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/form.js" defer></script>
+    <title>Friends Quiz</title>
+  </head>
+
+  <body>
+    <header class="title">
+      <h1>Friends Quiz</h1>
+    </header>
+    <main class="main-content">
+      <fieldset>
+        <form data-js="form" class="form">
+          <label for="input-question">Your Question: </label>
+          <textarea
+            name="inputQuestion"
+            id="input-question"
+            data-js="input-question"
+            maxlength="150"
+            rows="5"
+            placeholder="The quiz-question is…"
+          ></textarea>
+          <p class="remaining-characters">
+            <span data-js="characters-questions">150</span> characters left
+          </p>
+
+          <label for="input-answer">Your Answer:</label>
+          <textarea
+            name="inputAnswer"
+            id="input-answer"
+            data-js="input-answer"
+            maxlength="150"
+            placeholder="The Answer to the question is…"
+          ></textarea>
+          <p class="remaining-characters">
+            <span data-js="characters-answers">150</span> characters left
+          </p>
+
+          <label for="input-tag"> Tag:</label>
+          <input type="text" id="input-tag" name="inputTag" />
+
+          <button type="submit" class="quiz-card--button">Submit</button>
+        </form>
+      </fieldset>
+
+      <section data-js="question-container"></section>
+    </main>
+    <footer>
+      <nav class="footer-navbar" aria-label="main-navigation">
+        <a href="./index.html" class="footer-navbar__btn-home">
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/home.png"
+            alt="Home Page"
+          />
+        </a>
+
+        <a href="./bookmarks.html" class="footer-navbar__btn-bookmark">
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/bookmark.png"
+            alt="Bookmark Page"
+          />
+        </a>
+
+        <a href="./form.html" class="footer-navbar__btn-form active">
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/add-active.png"
+            alt="Add Page"
+          />
+        </a>
+
+        <a
+          href="./profile.html"
+          class="footer-navbar__btn-profil"
+          aria-current="page"
+        >
+          <img
+            class="footer-navbar__btn--icon"
+            src="./assets/user.png"
+            alt="Profil Page"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,10 +1,13 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--gap);
 
-  border-radius: var(--radius-m);
+  /* border-radius: var(--radius-m);
   border: 2px solid var(--secondary);
-  background-color: var(--background-secondary);
+  background-color: var(--background-secondary); */
 }
 
 .quiz-card {
@@ -13,6 +16,10 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+
+  border-radius: var(--radius-m);
+  border: 2px solid var(--secondary);
+  background-color: var(--background-secondary);
 
   gap: var(--gap);
   padding: var(--padding-xl);
@@ -57,4 +64,6 @@
   background-color: var(--background-secondary);
   padding: var(--padding-s) var(--padding-m);
   border-radius: var(--radius-s);
+  font-size: 1rem;
+  font-weight: var(--font-weight);
 }

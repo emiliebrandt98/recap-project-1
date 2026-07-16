@@ -13,7 +13,8 @@
 
 .footer-navbar__btn-home,
 .footer-navbar__btn-bookmark,
-.footer-navbar__btn-profil {
+.footer-navbar__btn-profil,
+.footer-navbar__btn-form {
   background-color: var(--secondary);
   border: none;
 
