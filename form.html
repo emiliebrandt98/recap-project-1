@@ -16,39 +16,41 @@
       <h1>Friends Quiz</h1>
     </header>
     <main class="main-content">
-      <form data-js="form" class="form">
-        <label for="input-question">Your Question: </label>
-        <textarea
-          name="inputQuestion"
-          id="input-question"
-          data-js="input-question"
-          maxlength="150"
-          rows="5"
-          placeholder="The quiz-question is…"
-        ></textarea>
-        <p class="remaining-characters">
-          <span data-js="remaining-characters-questions">150</span> characters
-          left
-        </p>
+      <fieldset>
+        <form data-js="form" class="form">
+          <label for="input-question">Your Question: </label>
+          <textarea
+            name="inputQuestion"
+            id="input-question"
+            data-js="input-question"
+            maxlength="150"
+            rows="5"
+            placeholder="The quiz-question is…"
+          ></textarea>
+          <p class="remaining-characters">
+            <span data-js="characters-questions">150</span> characters left
+          </p>
 
-        <label for="input-answer">Your Answer:</label>
-        <textarea
-          name="inputAnswer"
-          id="input-answer"
-          data-js="input-answer"
-          maxlength="150"
-          placeholder="The Answer to the question is…"
-        ></textarea>
-        <p class="remaining-characters">
-          <span data-js="remaining-characters-answers">150</span> characters
-          left
-        </p>
+          <label for="input-answer">Your Answer:</label>
+          <textarea
+            name="inputAnswer"
+            id="input-answer"
+            data-js="input-answer"
+            maxlength="150"
+            placeholder="The Answer to the question is…"
+          ></textarea>
+          <p class="remaining-characters">
+            <span data-js="characters-answers">150</span> characters left
+          </p>
 
-        <label for="input-tag"> Tag:</label>
-        <input type="text" id="input-tag" name="inputTag" />
+          <label for="input-tag"> Tag:</label>
+          <input type="text" id="input-tag" name="inputTag" />
 
-        <button type="submit" class="quiz-card--button">Submit</button>
-      </form>
+          <button type="submit" class="quiz-card--button">Submit</button>
+        </form>
+      </fieldset>
+
+      <section data-js="question-container"></section>
     </main>
     <footer>
       <nav class="footer-navbar" aria-label="main-navigation">
