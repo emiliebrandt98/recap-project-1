@@ -48,6 +48,12 @@
   display: block;
 }
 
+.quiz-card--bookmark--active {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Tags */
 .quiz-card--list {
   list-style: none;
