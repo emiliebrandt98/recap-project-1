@@ -14,7 +14,39 @@
     <header class="title">
       <h1>Friends Quiz</h1>
     </header>
-    <main class="main-content"></main>
+    <main class="main-content">
+      <form>
+        <label for="input-question">Your Question: </label>
+        <textarea
+          name="inputQuestion"
+          id="input-question"
+          data-js="input-question"
+          maxlength="150"
+          rows="5"
+          placeholder="The quiz-question is…"
+        ></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters">150</span> characters left
+        </p>
+
+        <label for="input-answer">Your Answer:</label>
+        <textarea
+          name="inputAnswer"
+          id="input-answer"
+          data-js="input-answer"
+          maxlength="150"
+          placeholder="The Answer to the question is…"
+        ></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters">150</span> characters left
+        </p>
+
+        <label for="input-tag"> Tag:</label>
+        <input type="text" id="input-tag" name="inputTag" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
     <footer>
       <nav class="footer-navbar" aria-label="main-navigation">
         <a href="./index.html" class="footer-navbar__btn-home">
