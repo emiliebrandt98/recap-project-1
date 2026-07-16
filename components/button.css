@@ -6,18 +6,21 @@
   list-style: none;
 
   font-weight: var(--font-weight);
+  font-size: 1.2rem;
 
   cursor: pointer;
 }
 
-.hide-label {
+.quiz-card--button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.quiz-card__answer {
+  margin: 0 2rem;
   display: none;
 }
 
-details[open] .show-label {
-  display: none;
-}
-
-details[open] .hide-label {
-  display: inline;
+.quiz-card__answer--active {
+  display: block;
 }
