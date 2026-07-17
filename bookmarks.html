@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/button.js" defer></script>
     <title>Friends Quiz</title>
     <style>
       .card {
@@ -34,8 +35,17 @@
             What is the name of the coffee shop where the Friends gang
             frequently hangs out?
           </h2>
-          <button class="quiz-card--button" type="button">Show answer</button>
-          <p class="quiz-card__answer quiz-card__answer--active">
+          <button
+            class="quiz-card--button"
+            data-js="answerButton"
+            type="button"
+          >
+            Hide answer
+          </button>
+          <p
+            class="quiz-card__answer quiz-card__answer--active"
+            data-js="answer"
+          >
             Central Perk
           </p>
           <ul class="quiz-card--list">
@@ -45,12 +55,14 @@
           </ul>
           <button
             class="quiz-card--bookmark-btn"
+            data-js="bookmarkButton"
             aria-label="Bookmark this question"
             type="button"
           >
             <img
-              class="quiz-card--bookmark"
-              src="./assets/bookmark.png"
+              class="quiz-card--bookmark quiz-card--bookmark--active"
+              data-js="bookmarkImageActive"
+              src="./assets/bookmark-active.png"
               alt=""
             />
           </button>
