@@ -47,6 +47,30 @@ form.addEventListener("submit", (event) => {
   bookmarkImage.setAttribute("src", "./assets/bookmark.png");
   bookmarkImage.setAttribute("alt", "");
 
+  // ------------------Button Feedback------------------
+
+  cardButton.addEventListener("click", () => {
+    const answerButtonActive = cardAnswer.classList.toggle(
+      "quiz-card__answer--active",
+    )
+      ? "Hide Answer"
+      : "Show Answer";
+
+    cardButton.textContent = answerButtonActive;
+  });
+
+  cardBookmark.addEventListener("click", () => {
+    const bookmarkButtonActive = bookmarkImage.classList.toggle(
+      "quiz-card--bookmark--active",
+    );
+
+    if (bookmarkButtonActive) {
+      bookmarkImage.setAttribute("src", "./assets/bookmark-active.png");
+    } else {
+      bookmarkImage.setAttribute("src", "./assets/bookmark.png");
+    }
+  });
+
   // ------------------Remaining Characters------------------
   const remainingCharactersQuestion = document.querySelector(
     '[data-js="characters-questions"]',
