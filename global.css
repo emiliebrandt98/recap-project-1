@@ -42,6 +42,14 @@ body {
   font-size: 1.3rem;
 }
 
+body.dark {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color-dark);
+  background-color: var(--background-secondary);
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 .main-content {
   margin-top: 100px;
   margin-bottom: 100px;
