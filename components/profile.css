@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
 
-  width: 70px;
+  width: 80px;
   height: 40px;
 
   padding: var(--padding-s);
@@ -70,7 +70,7 @@
   border-radius: var(--radius-l);
 }
 
-.settings__toogle-button-circle {
+.settings__toogle-button > .settings__toogle-button-circle {
   background-color: var(--background-color);
   width: 30px;
   height: 30px;
@@ -78,10 +78,10 @@
   transition: all 300ms ease-in-out;
 }
 
-.settings__toogle-button-circle--active {
-  background-color: var(--background-color);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: all 300ms ease-in-out;
+.settings__toogle-button.active {
+  background-color: var(--secondary);
+}
+
+.settings__toogle-button.active > .settings__toogle-button-circle {
+  margin-left: 30px;
 }
