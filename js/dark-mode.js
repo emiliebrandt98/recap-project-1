@@ -5,4 +5,5 @@ const toogleButton = document.querySelector('[data-js="dark-mode-toggle"]');
 
 toogleButton.addEventListener("click", () => {
   toogleButton.classList.toggle("active");
+  body.classList.toggle("dark");
 });
